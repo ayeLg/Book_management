@@ -31,7 +31,13 @@ dbConnect();
 
 
 
+app.use('/',  (req, res ) => {
+                res.status(200).json({
+                    error : false,
+                    message : "books list",
 
+                });
+})
 
 app.use('/api/user', UserRouter);
 
